@@ -3,13 +3,13 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<link rel="stylesheet" href="{{'/assets/main.css' | prepend: site.baseurl}}">
 		</head>
 		<body>
 			<nav>
 	    		<ul>
 	        		<li><a href="/">Home</a></li>
-	        		<li><a href="/cv">CV</a></li>
+	        		<!--<li><a href="/cv">CV</a></li>-->
 	        		<li><a href="/blog">Blog</a></li>
 	    		</ul>
 			</nav>
@@ -18,12 +18,19 @@
 			{{ content }}
 			
 			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li>Email: <a href="mailto:sohweihaooo@gmail.com">sohweihaooo@gmail.com</a></li>
-	        		<li>Linkedin: <a href="https://www.linkedin.com/in/soh-wei-hao">linkedin.com/in/soh-wei-hao</a></li>
-	        		<li>Github: <a href="https://github.com/weihaooo">github.com/weihaooo</a></li>
-				</ul>
+			<footer id="footer">
+				<div class="row">
+					<div class="col-12">
+						<ul>
+							<li>Email: <a href="mailto:sohweihaooo@gmail.com">sohweihaooo@gmail.com</a></li>
+							<li>Linkedin: <a href="https://www.linkedin.com/in/soh-wei-hao">linkedin.com/in/soh-wei-hao</a></li>
+							<li>Github: <a href="https://github.com/weihaooo">github.com/weihaooo</a></li>
+						</ul>
+					</div>
+				</div>
 			</footer>
+			<script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
+			<script src="{{'/node_modules/popper.js/dist/umd/popper.min.js' | prepend: site.baseurl}}"></script>
+			<script src="{{'/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
 		</body>
 	</html>

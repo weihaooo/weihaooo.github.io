@@ -2,7 +2,24 @@
 layout: default
 title: Soh Wei Hao
 ---
-<div class="blurb">
-	<h1>Hi there, I'm Soh Wei Hao!</h1>
-	<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
+<div class="row">
+	<div class="col-9">
+		<h2>Hi, I am Soh Wei Hao, a budding software developer.</h2>
+		<p>Age: <span id="age"></span></p>
+		<p>Nationality: Singaporean</p>
+		<p>Still working on this site.</p>
+	</div>
+	<div class="col-3"><img src="assets/weihao.jpg" class="profilePic" /></div>
+</div>
+<div class="row">
+	<div class="col-12">
+	</div>
+</div>
+
+<script>
+	window.onload = populateAge; 
+	function populateAge(){
+		var bday = new Date(1993,9,20);
+		document.getElementById("age").textContent = Math.abs(new Date(Date.now() - bday).getUTCFullYear()- 1970);
+	}
+</script>
