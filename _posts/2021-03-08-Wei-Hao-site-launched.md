@@ -6,11 +6,13 @@ date: 2021-03-08
 
 Followed an online tutorial to set up this personal website using Github Pages, powered by Jekyll. Had always wanted to start a online resume page and had probably bookmarked this <a href="http://jmcglone.com/guides/github-pages/">tutorial</a> since years ago. Finally stopped procrastinating and made an effort to do this. 
 
-It may be lacking in teaching people how to launch the page in local but overall it pretty much helped to feed the template and kick start the process.
+The tutorial may be lacking in teaching people how to launch the page in local but overall it pretty much helped to feed the template and kick start the process.
 
 It can be very doable for people who have limited background in coding and I do recommend this for people who wants to create an online resume for themselves regardless of their background.
 
 I propose to first follow the Jekyll Quickstart to set up Jekyll first to create the project and then follow the tutorial above on setting up the github account and creating the different pages and files in the created project.
+
+Maybe I shall try to build on the tutorial to guide people who do not have any background to do this.
 
 Resources
 
